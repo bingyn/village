@@ -1,0 +1,23 @@
+server:
+  port: 8989
+  context-path: /spring
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+    mode: HTML5
+    suffix: .html
+    prefix: classpath:/templates/
+    content-type: text/html
+    encoding: UTF-8
+    check-template-location: true
+    check-template: true
+devtools:
+  restart:
+  enabled: true
+  livereload:
+    enabled: true #是否支持livereload
+    port: 35729
+
+#  additional-paths: resources/**,static/**,templates/**
+#  exclude: data/**
